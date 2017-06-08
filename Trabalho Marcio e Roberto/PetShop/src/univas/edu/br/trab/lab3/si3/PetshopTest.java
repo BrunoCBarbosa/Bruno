@@ -8,9 +8,13 @@ public class PetshopTest {
 
 	@Test
 	public void testCadastroDeCliente() {
-		Cachorro c = new Cachorro(1, "Bruno","09365640679","AntonioRafael",0, "Tuca","Labrador");
-		Cachorro c1 = new Cachorro(2, "Marcos","09565640679","Centro",0, "Bolinha","PitBull");
-		Gato c3 = new Gato(3, "Daniella","095656407549","Cruzeiro","Mingau","Siames");
+		Cachorro ca = new Cachorro("Labrador","Bolinha");
+		Cachorro ca1 = new Cachorro("PitBull","Matador");
+		Gato ga = new Gato("Siames","Mingau");
+		
+		Cliente c = new Cliente(1, "Bruno",ca);
+		Cliente c1 = new Cliente(2, "Marcos", ca1);
+		Cliente c3 = new Cliente(3, "Daniella", ga);
 	}
 
 }

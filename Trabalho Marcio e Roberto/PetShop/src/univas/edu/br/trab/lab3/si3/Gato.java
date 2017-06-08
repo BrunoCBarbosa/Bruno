@@ -1,13 +1,13 @@
 package univas.edu.br.trab.lab3.si3;
 
-public class Gato extends Cliente{
+public class Gato extends Animal{
 	private String nome;
-	private String raca;
 	
-	public Gato(int numero,String proprietario, String cpf, String endereco,String nome, String raca) {
-		super(numero,proprietario, cpf, endereco);
+	public Gato(String raca,String nome) {
+		super(raca);
 		this.nome = nome;
-		this.raca = raca;
 	}
+
+	
 
 }

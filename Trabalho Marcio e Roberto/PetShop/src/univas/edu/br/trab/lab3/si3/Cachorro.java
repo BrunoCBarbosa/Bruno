@@ -4,8 +4,8 @@ public class Cachorro extends Cliente{
 	private String nome;
 	private String raca;
 	
-	public Cachorro(String proprietario, String cpf, String endereco,String nome, String raca) {
-		super(proprietario, cpf, endereco);
+	public Cachorro(int numero,String proprietario, String cpf, String endereco,float totalCompras,String nome, String raca) {
+		super(numero,proprietario, cpf, endereco);
 		this.nome = nome;
 		this.raca = raca;
 	}

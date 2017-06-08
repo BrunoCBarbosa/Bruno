@@ -4,24 +4,18 @@ import java.util.ArrayList;
 
 public class Principal {
 	private ArrayList<Cliente>clientes = new ArrayList<Cliente>();
-	private ControleCompras controleCompras = new ControleCompras();
+	private Cliente cliente;
+	
+	
 	
 	public void cadastrar(Cliente cadastro){
 		clientes.add(cadastro);
 	}
 	
-	public void compra(String produto, float valor){
+	public float compra(float valor){
+		return cliente.getTotalCompras() += valor;
 		
-		if(produto == "cachorro"){
-			controleCompras.produtoCachorro += valor;
-		}else{
-			controleCompras.produtoGato += valor;
-		}
-		
+				
 	}
 	
-	public ControleCompras getcontroleCompras(){
-		return controleCompras;
-	}
-
 }

@@ -3,7 +3,7 @@ package univas.edu.br.trab.lab3.si3;
 public class Cliente {
 	private int numero;
 	private String proprietario;
-	private float totalCompras;
+	private float totalCompras = 0f;
 	private Animal animal;
 	
 	
@@ -11,11 +11,16 @@ public class Cliente {
 		this.numero = numero;
 		this.proprietario = proprietario;
 		this.animal = animal;
+		
 	}
 	
-	public float compra(float valor){
+	public void compra(float valor){
 		totalCompras += valor;
-		return valor;
+		
+	}
+	
+	public float getTotalCompras(){
+		return totalCompras;
 	}
 		
 }

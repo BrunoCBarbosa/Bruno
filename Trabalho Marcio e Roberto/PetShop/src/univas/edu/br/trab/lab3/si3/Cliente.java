@@ -1,5 +1,7 @@
 package univas.edu.br.trab.lab3.si3;
 
+import java.util.ArrayList;
+
 public class Cliente {
 	private int numero;
 	private String proprietario;
@@ -13,6 +15,7 @@ public class Cliente {
 		this.animal = animal;
 		
 	}
+	
 	
 	public void compra(float valor){
 		totalCompras += valor;
